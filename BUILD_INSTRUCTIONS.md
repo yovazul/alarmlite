@@ -48,13 +48,23 @@ Android Studio will automatically detect the Gradle project and start syncing:
 3. Try **File → Invalidate Caches / Restart** and then sync again
 4. Ensure you have an internet connection for downloading dependencies
 
+**⚠️ If source files don't appear after opening the project:**
+- See [ANDROID_STUDIO_TROUBLESHOOTING.md](ANDROID_STUDIO_TROUBLESHOOTING.md) for detailed solutions
+- Most common fix: Switch Project view from "Project Files" to "Android" view
+- Also ensure Gradle sync completed successfully (check Build output)
+
 ### 4. Configure Android SDK
 
 1. Go to **File → Project Structure → SDK Location**
 2. Ensure Android SDK Location is set correctly
-3. Go to **Tools → SDK Manager**
-4. Under **SDK Platforms**, ensure API Level 28 (Android 9.0) or higher is installed
-5. Under **SDK Tools**, ensure the following are installed:
+3. If the SDK location is empty or incorrect:
+   - You can set it in Android Studio (step 1-2)
+   - Or create a `local.properties` file in the project root:
+     - Copy `local.properties.template` to `local.properties`
+     - Edit it and set the path to your Android SDK
+4. Go to **Tools → SDK Manager**
+5. Under **SDK Platforms**, ensure API Level 28 (Android 9.0) or higher is installed
+6. Under **SDK Tools**, ensure the following are installed:
    - Android SDK Build-Tools
    - Android SDK Platform-Tools
    - Android Emulator (if you plan to use an emulator)

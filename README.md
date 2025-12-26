@@ -37,6 +37,7 @@ cd alarmlite
    - Haz clic en "Sync Now" en la notificación
    - O manualmente: File → Sync Project with Gradle Files
    - Espera a que termine la sincronización (descargará dependencias la primera vez)
+   - **Si los archivos no aparecen**: Ver [ANDROID_STUDIO_TROUBLESHOOTING.md](ANDROID_STUDIO_TROUBLESHOOTING.md)
 
 4. Compila y ejecuta:
    - Conecta un dispositivo Android o inicia un emulador
