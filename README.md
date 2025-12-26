@@ -28,10 +28,15 @@ cd alarmlite
 ```
 
 2. Abre el proyecto en Android Studio:
-   - File → Open → Selecciona la carpeta del proyecto
+   - File → Open → Selecciona la carpeta raíz del proyecto (alarmlite)
+   - Asegúrate de seleccionar la carpeta que contiene `build.gradle` y `settings.gradle`
 
 3. Sincroniza el proyecto con Gradle:
-   - Android Studio sincronizará automáticamente, o puedes hacer clic en "Sync Now" si aparece
+   - Android Studio detectará el proyecto Gradle automáticamente
+   - Aparecerá una notificación "Gradle files have changed since last project sync"
+   - Haz clic en "Sync Now" en la notificación
+   - O manualmente: File → Sync Project with Gradle Files
+   - Espera a que termine la sincronización (descargará dependencias la primera vez)
 
 4. Compila y ejecuta:
    - Conecta un dispositivo Android o inicia un emulador

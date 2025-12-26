@@ -27,15 +27,26 @@ cd alarmlite
 ### 2. Open in Android Studio
 
 1. Launch Android Studio
-2. Select **File → Open**
-3. Navigate to the `alarmlite` directory
+2. Select **File → Open** (or **Open an Existing Project** if on the welcome screen)
+3. Navigate to the `alarmlite` directory and select it
 4. Click **OK**
 
-### 3. Sync Gradle
+**Important:** Make sure to select the root `alarmlite` directory that contains the `build.gradle` file, not a subdirectory.
 
-Android Studio will automatically prompt you to sync the project with Gradle files.
-- If prompted, click **Sync Now**
-- Wait for the sync to complete (this may take a few minutes on first run)
+### 3. Gradle Sync
+
+Android Studio will automatically detect the Gradle project and start syncing:
+
+- A notification banner will appear at the top saying **"Gradle files have changed since last project sync"**
+- Click **"Sync Now"** in the notification
+- Alternatively, you can manually sync by clicking **File → Sync Project with Gradle Files**
+- Wait for the sync to complete (this may take a few minutes on first run as it downloads dependencies)
+
+**If Gradle sync doesn't start automatically:**
+1. Make sure you opened the correct directory (the one with `build.gradle` and `settings.gradle`)
+2. Check that the Gradle wrapper files exist (`gradlew`, `gradlew.bat`, and `gradle/wrapper/gradle-wrapper.jar`)
+3. Try **File → Invalidate Caches / Restart** and then sync again
+4. Ensure you have an internet connection for downloading dependencies
 
 ### 4. Configure Android SDK
 
