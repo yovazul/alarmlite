@@ -44,6 +44,8 @@ android {
 tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
     kotlinOptions {
         jvmTarget = '1.8'
+        // Explicitly disable default JVM target inference
+        freeCompilerArgs = ['-Xjvm-default=all']
     }
 }
 
@@ -52,6 +54,14 @@ kapt {
     javacOptions {
         option("-source", "1.8")
         option("-target", "1.8")
+    }
+    correctErrorTypes = true
+}
+
+// Force Gradle to compile with Java 1.8 toolchain
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(11)
     }
 }
 
