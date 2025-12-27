@@ -40,10 +40,18 @@ android {
     namespace 'com.yovazul.alarmlite'
 }
 
-// Ensure kapt uses the same JVM target
+// Force all Kotlin compile tasks to use JVM target 1.8
 tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
     kotlinOptions {
         jvmTarget = '1.8'
+    }
+}
+
+// Explicitly configure kapt to use JVM 1.8
+kapt {
+    javacOptions {
+        option("-source", "1.8")
+        option("-target", "1.8")
     }
 }
 
