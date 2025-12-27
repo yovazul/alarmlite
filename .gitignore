@@ -37,8 +37,10 @@ captures/
 
 # IntelliJ
 *.iml
-.idea/
-misc.xml
+.idea/*
+!.idea/gradle.xml
+!.idea/misc.xml
+!.idea/compiler.xml
 deploymentTargetDropDown.xml
 render.experimental.xml
 

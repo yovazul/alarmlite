@@ -1,24 +1,45 @@
 # Quick Start Guide - Opening the Project in Android Studio
 
+> ⚠️ **IMPORTANT**: If the sync option doesn't appear, see [SYNC_NOT_APPEARING.md](SYNC_NOT_APPEARING.md) for detailed solutions.
+
 ## Step-by-Step Visual Guide
 
-### Step 1: Open the Project
+### Step 1: Import the Project (IMPORTANT!)
+
+**Use "Import Project" for best results:**
+
 ```
 Android Studio Welcome Screen
-┌────────────────────────────────────┐
-│  Recent Projects                   │
-│  ─────────────────────────────────│
-│  [ ] Project 1                     │
-│  [ ] Project 2                     │
-│                                    │
-│  ┌──────────────────────────────┐│
-│  │  📁 Open                     ││  ← Click Here
-│  └──────────────────────────────┘│
-│                                    │
-└────────────────────────────────────┘
+┌─────────────────────────────────────┐
+│  New Project                        │
+│  Open                               │
+│  Get from VCS                       │
+│  ┏━━━━━━━━━━━━━━━━━━━━━━━━━┓      │
+│  ┃ Import Project          ┃ ← CLICK│
+│  ┗━━━━━━━━━━━━━━━━━━━━━━━━━┛      │
+└─────────────────────────────────────┘
 ```
 
-Navigate to and select the `alarmlite` folder (the root folder with `build.gradle`)
+**Then select the `build.gradle` file:**
+```
+File Chooser - Navigate to alarmlite folder
+┌─────────────────────────────────────┐
+│ alarmlite/                          │
+│   ├── app/                          │
+│   ├── gradle/                       │
+│   ├── ┏━━━━━━━━━━━━━━━━┓          │
+│   ├── ┃ build.gradle   ┃ ← Select  │
+│   ├── ┗━━━━━━━━━━━━━━━━┛          │
+│   ├── settings.gradle               │
+│   └── gradlew                       │
+└─────────────────────────────────────┘
+```
+
+**Alternative (if "Import" not visible):**
+- Click "Open" and select the `alarmlite` folder
+- Android Studio should auto-detect it as a Gradle project
+
+⚠️ **If sync option doesn't appear, see [SYNC_NOT_APPEARING.md](SYNC_NOT_APPEARING.md)**
 
 ### Step 2: Wait for Gradle Sync
 
