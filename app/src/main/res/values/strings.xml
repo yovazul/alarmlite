@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Alarm Lite</string>
+    
+    <!-- Main Activity -->
+    <string name="no_alarms">No hay alarmas configuradas</string>
+    <string name="add_alarm">Agregar alarma</string>
+    
+    <!-- Alarm Editor -->
+    <string name="new_alarm">Nueva alarma</string>
+    <string name="edit_alarm">Editar alarma</string>
+    <string name="time">Hora</string>
+    <string name="label">Etiqueta</string>
+    <string name="label_hint">Nombre de la alarma</string>
+    <string name="sound">Sonido</string>
+    <string name="select_sound">Seleccionar MP3</string>
+    <string name="default_sound">Sonido predeterminado</string>
+    <string name="duration">Duración (segundos)</string>
+    <string name="repeat">Repetir</string>
+    <string name="monday">Lunes</string>
+    <string name="tuesday">Martes</string>
+    <string name="wednesday">Miércoles</string>
+    <string name="thursday">Jueves</string>
+    <string name="friday">Viernes</string>
+    <string name="saturday">Sábado</string>
+    <string name="sunday">Domingo</string>
+    <string name="save">Guardar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="delete">Eliminar</string>
+    
+    <!-- Alarm Ring -->
+    <string name="dismiss">Desactivar</string>
+    <string name="alarm_ringing">Alarma sonando</string>
+    
+    <!-- Permissions -->
+    <string name="permission_needed">Permiso necesario</string>
+    <string name="storage_permission_rationale">Se necesita permiso de almacenamiento para seleccionar archivos MP3</string>
+    <string name="alarm_permission_rationale">Se necesita permiso para programar alarmas exactas</string>
+    <string name="notification_permission_rationale">Se necesita permiso para mostrar notificaciones</string>
+    <string name="ok">OK</string>
+</resources>
