@@ -40,6 +40,13 @@ android {
     namespace 'com.yovazul.alarmlite'
 }
 
+// Ensure kapt uses the same JVM target
+tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
 dependencies {
     implementation 'androidx.core:core-ktx:1.9.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
